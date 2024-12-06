@@ -1,7 +1,11 @@
+
 export function Home(){
     return(
         <>
-        <h1>Home Page</h1>
+            <div>
+            <img id="banner" src="testconcert.jpg"/>
+            </div>
+            
         </>
     )
 }

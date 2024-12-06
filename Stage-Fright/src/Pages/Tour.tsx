@@ -1,5 +1,5 @@
 
-export function About(){
+export function Tour(){
     return(
         <>
         
