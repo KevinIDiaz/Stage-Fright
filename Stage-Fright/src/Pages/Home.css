@@ -1,8 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  scrollbar-color: #21073a black;
+  scrollbar-width: thin;
 }
 
-.banner {
-  width: 100vw;
+#banner {
+  width: 100%; /* Full-width image */
+  height: 100vh; /* Full height of the viewport */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+
+#content {
+  width: 100%;
 }

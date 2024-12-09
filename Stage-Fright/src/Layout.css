@@ -1,0 +1,9 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#content {
+  margin-top: 0px; /* Push content down to avoid overlapping with navbar */
+  z-index: 0;
+  position: relative;
+}
