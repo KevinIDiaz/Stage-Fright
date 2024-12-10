@@ -1,6 +1,6 @@
 import './Home.css'
 import album from '/album cover.jpg'
-import {Button} from './Button'
+import Button from '../Components/Button'
 export function Home(){
     return(
         <>
@@ -12,7 +12,7 @@ export function Home(){
             </div>
             <div id='Merch'>
                 <h1>T O P S E L L E R S</h1>
-                {Button()}
+                <Button text={'helloooo'}/>
             </div>
             </div>
             

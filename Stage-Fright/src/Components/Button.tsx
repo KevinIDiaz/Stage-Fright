@@ -1,8 +1,8 @@
-import '/Button.css'
-export function Button(){
+import './Button.css'
+export function Button(props){
     return(
         <>
-        <button>test</button>
+        <button>{text}</button>
         </>
     )
 }
