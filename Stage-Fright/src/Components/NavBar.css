@@ -13,7 +13,7 @@
   z-index: 999;
 }
 #mainLogo {
-  width: 15%;
+  width: 10%;
 }
 ul {
   list-style: none;
@@ -22,7 +22,7 @@ ul {
   margin-right: 30px;
 }
 ul li {
-  margin: 20px;
+  margin: 25px;
 }
 
 ul li :hover {

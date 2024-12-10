@@ -13,6 +13,7 @@ export function NavBar(){
             <ul>
             <li><Link to = "/Merch"><button>Merch</button></Link></li>
             <li><Link to = "/Tour"><button>Tour</button></Link></li>
+            <li><Link to = "/Tour"><button>Tour</button></Link></li>
             </ul>
             
             </div>
