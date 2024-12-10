@@ -6,6 +6,7 @@ import {About} from './Pages/About'
 import {Merch} from './Pages/Merch'
 import { Layout } from './Layout'
 import { Tour } from './Pages/Tour'
+import {Contact} from './Pages/Contact'
 
 function App() {
   return(
@@ -16,6 +17,7 @@ function App() {
               <Route path="/About" element={<About/>} />
               <Route path="/Merch" element={<Merch/>} />
               <Route path="/Tour" element={<Tour/>} />
+              <Route path="/Contact" element={<Contact/>} />
             </Route>
             
         </Routes>
