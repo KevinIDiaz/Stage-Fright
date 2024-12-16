@@ -5,8 +5,8 @@
   scrollbar-width: thin;
 }
 #content {
-  margin-top: 0px; /* Push content down to avoid overlapping with navbar */
   z-index: 0;
   position: relative;
   overflow-x: hidden;
+  margin-bottom: 0;
 }

@@ -1,8 +1,8 @@
 import './Button.css'
-export function Button(props){
+export default function Button({text}:{text:string}){
     return(
         <>
-        <button>{text}</button>
+        <button id="button">{text}</button>
         </>
     )
 }

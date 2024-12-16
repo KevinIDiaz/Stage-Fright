@@ -7,9 +7,20 @@ h1 {
   font-family: "Crimson Text", serif;
   font-weight: 1000;
   font-style: normal;
-  font-size: 64px;
+  font-size: 70px;
   margin: 10px;
   margin-top: 20px;
+  filter: blur(0.5px);
+}
+
+h2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin: 10px;
+  margin-top: 20px;
+  filter: blur(0.5px);
 }
 #Banner {
   background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0), black),
@@ -31,7 +42,7 @@ h1 {
 }
 
 #Releases h1 {
-  color: white;
+  color: rgb(238, 214, 214);
 }
 
 #Merch {
@@ -39,7 +50,7 @@ h1 {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  background-color: #6b0a0a;
+  background-color: rgb(15, 14, 14);
   width: 100vw;
 }
 #Merch h1 {
@@ -49,4 +60,49 @@ h1 {
 #album {
   width: 600px;
   margin: 20px;
+  position: absolute;
+  transition: filter 0.25s ease-out;
+}
+
+#album-cover {
+  width: 640px;
+  height: 637px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  transition: filter 0.25s ease-out;
+}
+
+#album-cover:hover #album {
+  filter: brightness(40%);
+}
+
+#album-cover p {
+  position: relative;
+  margin-top: 150px;
+  visibility: hidden;
+  filter: blur(2px);
+}
+
+#album-cover:hover p {
+  visibility: visible;
+  filter: blur(0.4px);
+  transition: filter 0.7s ease-out;
+}
+
+#spotify {
+  color: white;
+  visibility: hidden;
+  filter: blur(2px);
+}
+
+#album-cover:hover #spotify {
+  visibility: visible;
+  filter: blur(0.4px);
+  transition: filter 0.7s ease-out;
+}
+
+a:hover {
+  cursor: pointer;
 }
