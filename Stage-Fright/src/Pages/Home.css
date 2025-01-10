@@ -11,6 +11,7 @@ h1 {
   margin: 10px;
   margin-top: 20px;
   filter: blur(0.5px);
+  letter-spacing: 15px;
 }
 
 h2 {
@@ -21,13 +22,25 @@ h2 {
   margin: 10px;
   margin-top: 20px;
   filter: blur(0.5px);
+  letter-spacing: 15px;
 }
+p {
+  font-family: "Crimson Text", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 64px;
+  letter-spacing: 15px;
+}
+
+#banner-video {
+  z-index: 0;
+}
+
 #Banner {
-  background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0), black),
-    url(testconcert.jpeg);
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0), black);
   height: 100vh;
   width: 100vw;
-  background-size: cover;
+  overflow: hidden;
 }
 #content {
   width: 100%;
@@ -39,6 +52,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
+  box-shadow: 0 0 5px 15px #21073a;
 }
 
 #Releases h1 {
@@ -83,6 +97,10 @@ h2 {
   margin-top: 150px;
   visibility: hidden;
   filter: blur(2px);
+  font-family: "Crimson Text", serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 64px;
 }
 
 #album-cover:hover p {
@@ -105,4 +123,72 @@ h2 {
 
 a:hover {
   cursor: pointer;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0), black);
+  width: 100vw;
+  height: 100vh;
+}
+
+#singles-container {
+  display: inline-block;
+  aspect-ratio: 1/0.5;
+  width: 100vw;
+}
+
+.single {
+  aspect-ratio: 1/1;
+  width: 25vw;
+  transition: filter 0.25s ease-out;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.single-image {
+  aspect-ratio: 1/1;
+  width: 25%;
+  z-index: 1;
+  position: absolute;
+}
+
+.single:hover .single-image {
+  filter: brightness(40%);
+  transition: filter 0.25s ease-out;
+}
+
+.single-details {
+  aspect-ratio: 1/1;
+  width: 100%;
+  z-index: 99;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.single-details p {
+  font-size: 30px;
+  visibility: hidden;
+  filter: blur(2px);
+}
+.single-details img {
+  visibility: hidden;
+  filter: blur(2px);
+}
+
+.single:hover p {
+  visibility: visible;
+  filter: blur(0.4px);
+  transition: filter 0.7s ease-out;
+}
+.single:hover img {
+  visibility: visible;
+  filter: blur(0.4px);
+  transition: filter 0.7s ease-out;
 }

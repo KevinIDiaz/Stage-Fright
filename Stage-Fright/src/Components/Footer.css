@@ -11,13 +11,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all, 0.25s;
 }
 
 p {
   font-family: "Crimson Text", serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 64px;
+  font-size: 12px;
 }
 
 #footerLogo {
@@ -34,4 +35,13 @@ p {
 
 #socials li {
   margin: 10px;
+}
+
+#footer button p {
+  letter-spacing: 5px;
+  transition: all, 0.25s;
+}
+ul li :hover {
+  cursor: pointer;
+  color: #6b0a0a;
 }
