@@ -12,6 +12,7 @@ h1 {
   margin-top: 20px;
   filter: blur(0.5px);
   letter-spacing: 15px;
+  text-shadow: 8px 8px rgb(228, 183, 183);
 }
 
 h2 {
@@ -23,6 +24,7 @@ h2 {
   margin-top: 20px;
   filter: blur(0.5px);
   letter-spacing: 15px;
+  -webkit-text-stroke: 1px rgb(228, 183, 183);
 }
 p {
   font-family: "Crimson Text", serif;
@@ -56,7 +58,7 @@ p {
 }
 
 #Releases h1 {
-  color: rgb(238, 214, 214);
+  color: white;
 }
 
 #Merch {
@@ -68,7 +70,8 @@ p {
   width: 100vw;
 }
 #Merch h1 {
-  color: #440b0b;
+  color: #7e1414;
+  text-shadow: 8px 8px #440b0b;
 }
 
 #album {
@@ -133,17 +136,43 @@ a:hover {
   background-image: linear-gradient(to bottom right, rgb(0, 0, 0, 0), black);
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#overlay button {
+  transform: translate(0, 300px);
+  border: solid 5px #290606;
+  font-size: 2vw;
+  padding: 20px;
+  letter-spacing: 1.5vw;
+  font-weight: 700;
+  border-style: ridge;
+  transition: all, 0.5s;
+  transition: text-shadow, 0.1s;
+  background-color: #440b0b29;
+  color: #821414;
+}
+
+#overlay button:hover {
+  border: none;
+  background-color: #21073a65;
+  cursor: pointer;
+  color: #821414;
+  text-shadow: 8px 8px #440b0b;
 }
 
 #singles-container {
   display: inline-block;
   aspect-ratio: 1/0.5;
-  width: 100vw;
+  width: 96vw;
+  margin-bottom: 4vw;
+  margin-top: 1vw;
 }
 
 .single {
   aspect-ratio: 1/1;
-  width: 25vw;
+  width: 25%;
   transition: filter 0.25s ease-out;
   overflow: hidden;
   display: inline-block;
@@ -151,9 +180,10 @@ a:hover {
 
 .single-image {
   aspect-ratio: 1/1;
-  width: 25%;
+  width: 24%;
   z-index: 1;
   position: absolute;
+  border-radius: 8px;
 }
 
 .single:hover .single-image {
@@ -173,13 +203,14 @@ a:hover {
 }
 
 .single-details p {
-  font-size: 30px;
+  font-size: 2vw;
   visibility: hidden;
   filter: blur(2px);
 }
 .single-details img {
   visibility: hidden;
   filter: blur(2px);
+  width: 9vw;
 }
 
 .single:hover p {
@@ -191,4 +222,19 @@ a:hover {
   visibility: visible;
   filter: blur(0.4px);
   transition: filter 0.7s ease-out;
+}
+
+#Merch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+.slider-container {
+  width: 99vw;
+  overflow-y: hidden;
+  height: 600px;
+  display: flex;
+  justify-content: center;
 }

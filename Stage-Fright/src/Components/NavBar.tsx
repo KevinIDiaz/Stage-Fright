@@ -30,7 +30,7 @@ export function NavBar(){
             <ul>
             <li><Link to = "/1/"><button>Home</button></Link></li>
             
-            <li><Link to = "/2/Contact"><button>Contact Us!</button></Link></li>
+            <li><Link to = "/2/Contact"><button>Contact Us</button></Link></li>
             </ul>
             <img id='mainLogo'src={mainLogo}/>
             <ul>
